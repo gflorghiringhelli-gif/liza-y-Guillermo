@@ -7,8 +7,8 @@
     --champagne-base: #e6d7bc;  
     --champagne-light: #f7f2ea; 
     --champagne-dark: #9c8253;  
-    --gold-sutil: #b89762;         /* Dorado sutil y elegante del sobre */
-    --gold-light: #dfccb3;         /* Champagne/dorado suave para bordes */
+    --gold-sutil: #b89762;         
+    --gold-light: #dfccb3;         
     --gold-border: rgba(184, 151, 98, 0.35);
     --white: #ffffff;
     --border-champagne: rgba(223, 204, 166, 0.4);
@@ -56,12 +56,46 @@ body {
 #imgSobreEstetica { 
     position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2; transition: opacity 0.5s ease; 
 }
-#capa-boton { position: absolute; bottom: 55px; left: 50%; transform: translateX(-50%); z-index: 5001; width: 90%; max-width: 320px; }
+
+#capa-boton { 
+    position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); 
+    z-index: 5001; width: 90%; max-width: 320px; 
+    display: flex; flex-direction: column; gap: 12px; align-items: center; 
+}
+
+/* TARJETA DE PASE EN EL SOBRE DE INICIO */
+.sobre-pase-badge {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--gold-light);
+    border-radius: 6px;
+    padding: 10px 16px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(74, 66, 61, 0.12);
+    text-align: center;
+}
+.sobre-pase-badge span {
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: 1px;
+}
+.sobre-pases-texto {
+    font-size: 0.75rem;
+    color: var(--gold-sutil);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    font-weight: 600;
+}
+
 .boton-editorial-inicio {
-    background: var(--white); color: var(--text-dark); padding: 16px 28px; border-radius: 6px;
-    font-family: 'Times New Roman', Times, serif; font-size: 0.85rem; letter-spacing: 2.5px; font-weight: 500;
-    text-transform: uppercase; box-shadow: 0 12px 30px rgba(74,66,61,0.08); border: 1px solid var(--gold-light);
-    transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: var(--white); color: var(--text-dark); padding: 14px 24px; border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif; font-size: 0.8rem; letter-spacing: 2.5px; font-weight: 500;
+    text-transform: uppercase; box-shadow: 0 10px 25px rgba(74,66,61,0.1); border: 1px solid var(--gold-light);
+    transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;
 }
 .boton-editorial-inicio:hover { transform: scale(1.02); }
 
@@ -76,7 +110,7 @@ body {
 .editorial-wrapper { max-width: 480px; margin: 0 auto; background: transparent; position: relative; box-shadow: 0 0 50px rgba(74,66,61,0.05); }
 .oculto { display: none !important; }
 
-/* DORADO SUTIL Y ELEGANTE (COMBINADO CON EL SOBRE) */
+/* DORADO SUTIL Y ELEGANTE RECUPERADO EN LOS NOMBRES */
 .gold-text {
     background: linear-gradient(135deg, #7c6439 0%, #b89762 60%, #cfb388 100%);
     -webkit-background-clip: text;
@@ -84,8 +118,11 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.gold-glow-text {
-    color: #ffffff;
+.gold-text-shimmer {
+    background: linear-gradient(135deg, #ffffff 0%, #f7f2ea 40%, #d4af37 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-shadow: 0 2px 10px rgba(184, 151, 98, 0.4);
 }
 
@@ -100,7 +137,7 @@ section { padding: 60px 22px; border-bottom: 1px solid var(--border-champagne); 
 .section-gradient-pastel-1 { background: linear-gradient(135deg, #fdf6f0 0%, #f4ede4 100%); }
 .section-gradient-pastel-2 { background: linear-gradient(135deg, #f5efe6 0%, #f9f5ee 100%); }
 
-/* PORTADA ESTILO SOFI & MATEO (MARCO ARQUEADO CON DORADO SUTIL) */
+/* PORTADA ESTILO SOFI & MATEO (MARCO ARQUEADO LIMPIO) */
 .hero-cover-arch {
     padding: 30px 20px 20px 20px;
     background: #f7f3ed;
@@ -158,14 +195,6 @@ section { padding: 60px 22px; border-bottom: 1px solid var(--border-champagne); 
     backdrop-filter: blur(4px);
     font-family: 'Cinzel', serif;
 }
-
-.vip-badge {
-    background: var(--white); border: 1px solid var(--gold-light); padding: 18px 22px;
-    margin: -20px 20px 35px 20px; border-radius: 8px; position: relative; z-index: 10;
-    box-shadow: 0 10px 30px rgba(223,204,166,0.12);
-}
-.vip-badge span { font-size: 0.68rem; letter-spacing: 2px; color: var(--gold-sutil); text-transform: uppercase; display: block; font-weight: 500; }
-.vip-badge strong { font-size: 1.25rem; color: var(--text-dark); display: block; margin-top: 4px; font-weight: 600; font-family: 'Cinzel', serif; }
 
 .gold-frame-card {
     background: var(--white); border: 1px solid var(--gold-border); border-radius: 10px;
