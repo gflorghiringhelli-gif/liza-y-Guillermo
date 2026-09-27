@@ -8,7 +8,7 @@
     <!-- FUENTES Y FONTABESOME -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -23,7 +23,7 @@
     </audio>
 
     <div id="music-toggle" class="music-btn" onclick="toggleMusic()" title="Pausar/Reproducir música"><i class="fa-solid fa-music"></i></div>
-    <div id="toast" class="toast"><i class="fa-solid fa-check-circle" style="color:var(--gold-pure);"></i> Dato copiado al portapapeles</div>
+    <div id="toast" class="toast"><i class="fa-solid fa-check-circle" style="color:var(--gold-sutil);"></i> Dato copiado al portapapeles</div>
 
     <!-- INTRO CINEMATOGRÁFICA (SOBRE QUE REPRODUCE 1.MP4) -->
     <div id="contenedor-principal" onclick="activarInvitacion()">
@@ -40,21 +40,24 @@
     <div class="editorial-wrapper">
         <div id="seccion-final" class="oculto">
 
-            <!-- 1. PORTADA ESTILO SOFI & MATEO (MARCO ARQUEADO ORO PURO) -->
+            <!-- 1. PORTADA ESTILO SOFI & MATEO (MARCO ARQUEADO) -->
             <header class="hero-cover-arch">
                 <div class="arch-frame">
                     <img src="img/portada.png" alt="Portada Liza y Guillermo" class="hero-img-arch">
                     <div class="arch-overlay-content">
-                        <h1 class="names-script-arch gold-glow-text">Liza & Guillermo</h1>
+                        <h1 class="names-script-arch">Liza & Guillermo</h1>
                         <div class="arch-sub-badge">Nuestra Boda</div>
                     </div>
                 </div>
             </header>
 
-            <!-- PASE VIP DINÁMICO -->
-            <div id="bloque-vip" class="vip-badge oculto reveal textured-pastel-box">
-                <span><i class="fa-solid fa-champagne-glasses" style="color:var(--gold-pure); margin-right:4px;"></i> Pase Exclusivo / Invitados</span>
-                <strong id="nombre-invitado-vip" class="gold-text">Invitado Especial</strong>
+            <!-- PASE VIP FIJO CON "VÁLIDO PARA 2 PERSONAS" -->
+            <div id="bloque-vip" class="vip-badge reveal textured-pastel-box">
+                <span><i class="fa-solid fa-champagne-glasses" style="color:var(--gold-sutil); margin-right:4px;"></i> Pase Exclusivo / Invitados</span>
+                <strong id="nombre-invitado-vip">Nuestros Invitados Especiales</strong>
+                <div style="margin-top: 8px; font-size: 0.85rem; font-family: 'Times New Roman', Times, serif; color: var(--text-dark); letter-spacing: 1px; font-weight: normal; border-top: 1px dashed var(--gold-light); padding-top: 6px;">
+                    <i class="fa-solid fa-ticket" style="color: var(--gold-sutil); margin-right: 5px;"></i> Válido para 2 personas
+                </div>
             </div>
 
             <!-- 2. MENSAJE DE INVITACIÓN -->
@@ -70,7 +73,7 @@
 
             <!-- 3. SAVE THE DATE -->
             <section class="reveal section-beige-block">
-                <h2 class="title-editorial gold-text">Save the Date</h2>
+                <h2 class="title-editorial">Save the Date</h2>
                 <p class="sub-editorial" style="margin-top: 10px;">Toca los 3 círculos para revelar la fecha:</p>
                 
                 <div class="circles-grid">
@@ -80,21 +83,21 @@
                 </div>
                 
                 <div id="revealed-date-msg" class="revealed-date-container">
-                    <p class="day-text gold-text">Sábado, 28 de Noviembre de 2026</p>
-                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Liza+%26+Guillermo&dates=20261128T183000Z/20261129T030000Z" target="_blank" class="btn-editorial champagne"><i class="fa-regular fa-calendar-plus" style="color:var(--gold-pure);"></i> Google Calendar</a>
+                    <p class="day-text">Sábado, 28 de Noviembre de 2026</p>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Liza+%26+Guillermo&dates=20261128T183000Z/20261129T030000Z" target="_blank" class="btn-editorial champagne"><i class="fa-regular fa-calendar-plus"></i> Google Calendar</a>
                     
                     <div class="countdown-grid mt-25">
-                        <div class="timer-box textured-pastel-box"><span id="days" class="gold-text">00</span><small>Días</small></div>
-                        <div class="timer-box textured-pastel-box"><span id="hours" class="gold-text">00</span><small>Horas</small></div>
-                        <div class="timer-box textured-pastel-box"><span id="minutes" class="gold-text">00</span><small>Min</small></div>
-                        <div class="timer-box textured-pastel-box"><span id="seconds" class="gold-text">00</span><small>Seg</small></div>
+                        <div class="timer-box textured-pastel-box"><span id="days">00</span><small>Días</small></div>
+                        <div class="timer-box textured-pastel-box"><span id="hours">00</span><small>Horas</small></div>
+                        <div class="timer-box textured-pastel-box"><span id="minutes">00</span><small>Min</small></div>
+                        <div class="timer-box textured-pastel-box"><span id="seconds">00</span><small>Seg</small></div>
                     </div>
                 </div>
             </section>
 
-            <!-- 4. CARRUSEL DE FOTOS (FOTO 1 AL FINAL) -->
+            <!-- 4. CARRUSEL DE FOTOS TÁCTIL (FOTO 1 AL FINAL) -->
             <section class="reveal section-gradient-pastel-2">
-                <h2 class="title-editorial gold-text" style="font-size: 1.6rem; margin-bottom: 5px;">Nuestros Momentos</h2>
+                <h2 class="title-editorial" style="font-size: 1.6rem; margin-bottom: 5px;">Nuestros Momentos</h2>
                 <p class="sub-editorial" style="margin-bottom: 18px;">Deslizá para ver las fotos</p>
                 
                 <div class="carousel-container textured-pastel-box">
@@ -113,16 +116,16 @@
                         <span class="dot" onclick="irASlide(4)"></span>
                     </div>
                 </div>
-                <p style="font-size: 0.72rem; letter-spacing: 2.5px; color: var(--gold-pure); text-transform: uppercase; margin-top: 14px; font-weight: 700;">← DESLIZÁ →</p>
+                <p style="font-size: 0.72rem; letter-spacing: 2.5px; color: var(--gold-sutil); text-transform: uppercase; margin-top: 14px; font-weight: 600;">← DESLIZÁ →</p>
             </section>
 
-            <!-- 5. CRONOGRAMA ESTILO POLAROID -->
+            <!-- 5. CRONOGRAMA ESTILO POLAROID (SIN CÍRCULO) -->
             <section class="reveal section-beige-block">
                 <div class="polaroid-frame-container">
                     <img src="img/cronograma.png" alt="Cronograma Foto" class="polaroid-img">
                 </div>
                 
-                <h2 class="title-editorial gold-text" style="margin-top: 15px;">Cronograma</h2>
+                <h2 class="title-editorial" style="margin-top: 15px;">Cronograma</h2>
                 <p class="sub-editorial" style="margin-bottom: 25px;">Momentos de la Boda</p>
 
                 <div class="cronograma-list">
@@ -178,23 +181,22 @@
 
             <!-- 6. UBICACIÓN -->
             <section class="reveal section-gradient-pastel-1">
-                <h2 class="title-editorial gold-text">Ubicación</h2>
-                <div class="location-clean textured-pastel-box" style="margin-top: 20px; padding: 30px 20px; border-radius: 8px; border: 1.5px solid var(--gold-border);">
+                <h2 class="title-editorial">Ubicación</h2>
+                <div class="location-clean textured-pastel-box" style="margin-top: 20px; padding: 30px 20px; border-radius: 8px; border: 1px solid var(--gold-border);">
                     <div class="location-icon champagne-glow"><i class="fa-solid fa-hotel"></i></div>
                     <h3 style="color: var(--text-dark); font-size: 1.3rem; font-weight: 500;">Green Palace Hotel Boutique</h3>
-                    <p style="font-size: 1rem; color: var(--gold-pure); font-weight: 600; margin: 6px 0 10px 0;"><i class="fa-regular fa-clock"></i> Ceremonia: 18:30 h</p>
+                    <p style="font-size: 1rem; color: var(--gold-sutil); font-weight: 500; margin: 6px 0 10px 0;"><i class="fa-regular fa-clock"></i> Ceremonia: 18:30 h</p>
                     <p style="color: var(--text-dark); margin-bottom: 22px; font-size: 0.95rem;">Sábado 28 de Noviembre, 2026</p>
-                    <a href="https://maps.app.goo.gl/5t8666AHSSxFcwPe9?g_st=aw" target="_blank" class="btn-editorial champagne"><i class="fa-solid fa-map-location-dot" style="color:var(--gold-pure);"></i> Ver Ubicación / Google Maps</a>
+                    <a href="https://maps.app.goo.gl/5t8666AHSSxFcwPe9?g_st=aw" target="_blank" class="btn-editorial champagne"><i class="fa-solid fa-map-location-dot"></i> Ver Ubicación / Google Maps</a>
                 </div>
             </section>
 
             <!-- 7. DRESS CODE & PALETA DE COLORES -->
             <section class="reveal section-gradient-pastel-2">
-                <h2 class="title-editorial gold-text">Dress Code</h2>
+                <h2 class="title-editorial">Dress Code</h2>
                 <p style="font-size: 1.3rem; font-family: 'Times New Roman', Times, serif; color: var(--text-dark); margin-top: 12px; font-style: italic;">Elegante</p>
                 <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Nos encantaría que nos acompañes luciendo tus mejores colores dentro de nuestra paleta sugerida:</p>
                 
-                <!-- Círculos de colores -->
                 <div class="palette-circles-container">
                     <div class="palette-circle" style="background-color: #EECFD6;" title="Muted Blush Pink"></div>
                     <div class="palette-circle" style="background-color: #CAD3C8;" title="Pastel Sage"></div>
@@ -207,9 +209,8 @@
                     <p style="font-size: 0.85rem; color: var(--text-dark); font-weight: 500;">Por favor evitar colores: blanco, beige, champangne.</p>
                 </div>
 
-                <!-- DETALLES DE LA BODA -->
                 <div style="margin-top: 45px;">
-                    <h3 class="title-editorial gold-text" style="font-size: 1.5rem; margin-bottom: 5px;">Detalles de la Boda</h3>
+                    <h3 class="title-editorial" style="font-size: 1.5rem; margin-bottom: 5px;">Detalles de la Boda</h3>
                     <p class="sub-editorial" style="font-size: 0.85rem; margin-bottom: 25px;">Para tener en cuenta</p>
 
                     <div class="cronograma-list">
@@ -242,12 +243,12 @@
 
             <!-- 8. SUGERENCIA DE REGALO -->
             <section class="reveal section-beige-block">
-                <div style="display:inline-block; padding: 6px 18px; background: var(--champagne-light); color: var(--gold-pure); border: 1px solid var(--gold-border); border-radius: 4px; font-size: 0.72rem; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 14px; font-weight: 700;">Detalle con amor</div>
-                <h2 class="title-editorial gold-text" style="font-size: 1.7rem;">Sugerencia de Regalo</h2>
+                <div style="display:inline-block; padding: 6px 18px; background: var(--champagne-base); color: var(--text-dark); border-radius: 4px; font-size: 0.72rem; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 14px; font-weight: 600;">Detalle con amor</div>
+                <h2 class="title-editorial" style="font-size: 1.7rem;">Sugerencia de Regalo</h2>
                 <p style="font-size: 1.05rem; color: var(--text-dark); margin-top: 12px; line-height: 1.6;">Su presencia es nuestro mejor regalo. Si desean tener un detalle adicional, pueden hacerlo mediante una transferencia a una de las siguientes cuentas:</p>
                 
                 <div style="margin-top: 22px;">
-                    <button onclick="toggleBancos()" id="btn-ver-bancos" class="btn-editorial champagne" style="padding: 14px 28px; font-size: 0.78rem;"><i class="fa-solid fa-vault" style="color:var(--gold-pure);"></i> Ver Datos Bancarios</button>
+                    <button onclick="toggleBancos()" id="btn-ver-bancos" class="btn-editorial champagne" style="padding: 14px 28px; font-size: 0.78rem;"><i class="fa-solid fa-vault"></i> Ver Datos Bancarios</button>
                 </div>
 
                 <div id="contenedor-bancos" class="oculto" style="margin-top: 20px;">
@@ -270,52 +271,52 @@
             <!-- 9. BUZÓN DE CANCIONES -->
             <section class="reveal section-gradient-pastel-1">
                 <div class="interactive-form-card textured-pastel-box">
-                    <div class="form-icon-header"><i class="fa-brands fa-spotify" style="color:var(--gold-pure);"></i></div>
-                    <h2 class="title-editorial gold-text" style="font-size: 1.5rem;">Música & Playlist</h2>
+                    <div class="form-icon-header"><i class="fa-brands fa-spotify"></i></div>
+                    <h2 class="title-editorial" style="font-size: 1.5rem;">Música & Playlist</h2>
                     <p class="sub-editorial" style="font-size: 0.95rem; margin-top: 6px;">¿Qué canción no puede faltar?</p>
                     <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Queremos que la pista explote. ¡Sugerinos los temas que querés bailar!</p>
                     
                     <input type="text" id="input-cancion" class="editorial-input" placeholder="Nombre de la canción y artista...">
-                    <button onclick="enviarCancion()" class="btn-editorial champagne w-100" style="margin-top: 12px;"><i class="fa-solid fa-paper-plane" style="color:var(--gold-pure);"></i> Recomendar Canción</button>
+                    <button onclick="enviarCancion()" class="btn-editorial champagne w-100" style="margin-top: 12px;"><i class="fa-solid fa-paper-plane"></i> Recomendar Canción</button>
                 </div>
             </section>
 
             <!-- 10. MURO DE DESEOS -->
             <section class="reveal section-beige-block">
                 <div class="interactive-form-card textured-pastel-box">
-                    <div class="form-icon-header"><i class="fa-solid fa-heart" style="color: var(--gold-pure);"></i></div>
-                    <h2 class="title-editorial gold-text" style="font-size: 1.5rem;">Muro de Deseos</h2>
+                    <div class="form-icon-header"><i class="fa-solid fa-heart" style="color: #d97782;"></i></div>
+                    <h2 class="title-editorial" style="font-size: 1.5rem;">Muro de Deseos</h2>
                     <p class="sub-editorial" style="font-size: 0.95rem; margin-top: 6px;">Dejá tu mensaje a los novios</p>
                     <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Tus palabras serán guardadas en nuestro libro de recuerdos inolvidables.</p>
                     
                     <input type="text" id="input-nombre-deseo" class="editorial-input" placeholder="Nombre y Apellido *">
                     <textarea id="input-texto-deseo" class="editorial-textarea" placeholder="Escribí tus buenos deseos para Liza & Guillermo..."></textarea>
-                    <button onclick="enviarDeseo()" class="btn-editorial champagne w-100" style="margin-top: 12px;"><i class="fa-solid fa-heart" style="color:var(--gold-pure);"></i> Enviar mi Deseo</button>
+                    <button onclick="enviarDeseo()" class="btn-editorial champagne w-100" style="margin-top: 12px;"><i class="fa-solid fa-heart"></i> Enviar mi Deseo</button>
                 </div>
             </section>
 
             <!-- 11. ÁLBUM COLECTIVO -->
             <section class="reveal section-gradient-pastel-2">
                 <div class="interactive-form-card textured-pastel-box">
-                    <div class="form-icon-header"><i class="fa-solid fa-camera-retro" style="color: var(--gold-pure);"></i></div>
-                    <h2 class="title-editorial gold-text" style="font-size: 1.5rem;">Álbum Colectivo</h2>
+                    <div class="form-icon-header"><i class="fa-solid fa-camera-retro" style="color: #6c9e8a;"></i></div>
+                    <h2 class="title-editorial" style="font-size: 1.5rem;">Álbum Colectivo</h2>
                     <p class="sub-editorial" style="font-size: 0.95rem; margin-top: 6px;">Compartí tus fotos</p>
                     <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Sube las fotos y momentos capturados durante la celebración.</p>
                     
-                    <a href="https://drive.google.com/drive/folders/1UOnfakvnCVkk789dpoU8qr2YiKwZQDhN?usp=sharing" target="_blank" class="btn-editorial champagne w-100"><i class="fa-solid fa-cloud-arrow-up" style="color:var(--gold-pure);"></i> Subir Mis Fotos</a>
+                    <a href="https://drive.google.com/drive/folders/1UOnfakvnCVkk789dpoU8qr2YiKwZQDhN?usp=sharing" target="_blank" class="btn-editorial champagne w-100"><i class="fa-solid fa-cloud-arrow-up"></i> Subir Mis Fotos</a>
                 </div>
             </section>
 
             <!-- 12. RSVP -->
             <section class="reveal section-beige-block">
                 <div class="interactive-form-card textured-pastel-box">
-                    <h2 class="title-editorial gold-text" style="font-size: 1.6rem;">RSVP</h2>
+                    <h2 class="title-editorial" style="font-size: 1.6rem;">RSVP</h2>
                     <p style="margin: 10px auto 16px auto; max-width: 280px; font-size: 0.95rem; color: var(--text-dark);">
                         Por favor, confirmá tu asistencia:
                     </p>
                     <div style="display: flex; flex-direction: column; gap: 10px; align-items: center; margin-bottom: 16px;">
-                        <a href="https://wa.me/595994889854?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Liza%20y%20Guillermo%20✨" class="btn-editorial champagne w-100" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> Confirmar con Liza</a>
-                        <a href="https://wa.me/595991822222?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Liza%20y%20Guillermo%20✨" class="btn-editorial champagne w-100" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> Confirmar con Guillermo</a>
+                        <a href="https://wa.me/595994889854?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Liza%20y%20Guillermo%20✨" class="btn-editorial champagne w-100" target="_blank"><i class="fa-brands fa-whatsapp"></i> Confirmar con Liza</a>
+                        <a href="https://wa.me/595991822222?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Liza%20y%20Guillermo%20✨" class="btn-editorial w-100" target="_blank"><i class="fa-brands fa-whatsapp"></i> Confirmar con Guillermo</a>
                     </div>
                     <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 1px; font-weight: 500;">
                         Fecha límite: <strong style="color: var(--text-dark);">02/11/2026</strong>
@@ -325,16 +326,17 @@
 
             <!-- 13. CIERRE ROMÁNTICO -->
             <section class="closing-section reveal section-gradient-pastel-1">
-                <div style="font-size:0.9rem; letter-spacing:3px; color:var(--gold-pure); text-transform:uppercase; margin-bottom:6px; font-weight: 700;">Con amor</div>
-                <div class="closing-gold-citadel gold-text">Liza & Guillermo</div>
+                <div style="font-size:0.9rem; letter-spacing:3px; color:var(--champagne-dark); text-transform:uppercase; margin-bottom:6px;">Con amor</div>
+                <div class="closing-gold-citadel">Liza & Guillermo</div>
                 <div style="margin-top: 25px; display: flex; justify-content: center; gap: 15px; opacity: 0.85; align-items:center;">
-                    <div style="height:1px; width:35px; background:var(--gold-border);"></div>
-                    <span style="font-size: 0.68rem; color: var(--gold-pure); letter-spacing: 3px; text-transform: uppercase; font-weight: 700;">28 · 11 · 2026</span>
-                    <div style="height:1px; width:35px; background:var(--gold-border);"></div>
+                    <div style="height:1px; width:35px; background:var(--champagne-base);"></div>
+                    <span style="font-size: 0.68rem; color: var(--champagne-dark); letter-spacing: 3px; text-transform: uppercase;">28 · 11 · 2026</span>
+                    <div style="height:1px; width:35px; background:var(--champagne-base);"></div>
                 </div>
             </section>
 
-            <footer>✦ Ghisa Digital · Tel: 0981 228 720 ✦</footer>
+            <footer>✦ Liza & Guillermo · Nuestra Boda ✦</footer>
+
         </div>
     </div>
 
