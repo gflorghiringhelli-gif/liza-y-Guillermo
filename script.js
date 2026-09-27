@@ -6,12 +6,15 @@ function cargarVIP() {
     const params = new URLSearchParams(window.location.search);
     const para = params.get('para');
     if (para) {
-        const nameEl = document.getElementById('nombre-invitado-vip');
+        const nameEl = document.getElementById('nombre-invitado-sobre');
         if (nameEl) {
             nameEl.innerText = para.replace(/\+/g, ' ');
         }
     }
 }
+
+// Ejecutar al cargar la página para que tome el nombre en el sobre de inicio
+window.addEventListener('DOMContentLoaded', cargarVIP);
 
 function activarInvitacion() {
     if (yaAbrio) return;
@@ -48,7 +51,6 @@ function transitionToMain(intro) {
         const finalSec = document.getElementById('seccion-final');
         if (finalSec) finalSec.classList.remove('oculto');
         window.scrollTo(0, 0);
-        cargarVIP();
         iniciarScrollAnimations();
         setInterval(actualizarContador, 1000);
         actualizarContador();
