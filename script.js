@@ -6,11 +6,9 @@ function cargarVIP() {
     const params = new URLSearchParams(window.location.search);
     const para = params.get('para');
     if (para) {
-        const badge = document.getElementById('bloque-vip');
         const nameEl = document.getElementById('nombre-invitado-vip');
-        if (badge && nameEl) {
+        if (nameEl) {
             nameEl.innerText = para.replace(/\+/g, ' ');
-            badge.classList.remove('oculto');
         }
     }
 }
