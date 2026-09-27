@@ -25,14 +25,25 @@
     <div id="music-toggle" class="music-btn" onclick="toggleMusic()" title="Pausar/Reproducir música"><i class="fa-solid fa-music"></i></div>
     <div id="toast" class="toast"><i class="fa-solid fa-check-circle" style="color:var(--gold-sutil);"></i> Dato copiado al portapapeles</div>
 
-    <!-- INTRO CINEMATOGRÁFICA (SOBRE QUE REPRODUCE 1.MP4) -->
+    <!-- INTRO CINEMATOGRÁFICA (SOBRE DE INICIO CON EL PASE Y BOTÓN) -->
     <div id="contenedor-principal" onclick="activarInvitacion()">
         <video id="videoSobre" playsinline muted preload="auto">
             <source src="img/1.mp4" type="video/mp4">
         </video>
         <img src="img/sobre.png" alt="Sobre de Boda" id="imgSobreEstetica">
+        
         <div id="capa-boton">
-            <div class="boton-editorial-inicio" id="btn-toca-abrir"><i class="fa-solid fa-envelope-open-text"></i> Tocar para abrir</div>
+            <!-- DETALLE DE PASES Y NOMBRE EN EL SOBRE DE INICIO -->
+            <div class="sobre-pase-badge">
+                <span id="nombre-invitado-sobre">Nuestros Invitados Especiales</span>
+                <div class="sobre-pases-texto">
+                    <i class="fa-solid fa-ticket" style="color: var(--gold-sutil); margin-right: 4px;"></i> Válido para 2 personas
+                </div>
+            </div>
+            
+            <div class="boton-editorial-inicio" id="btn-toca-abrir">
+                <i class="fa-solid fa-envelope-open-text"></i> Tocar para abrir
+            </div>
         </div>
     </div>
 
@@ -40,25 +51,16 @@
     <div class="editorial-wrapper">
         <div id="seccion-final" class="oculto">
 
-            <!-- 1. PORTADA ESTILO SOFI & MATEO (MARCO ARQUEADO) -->
+            <!-- 1. PORTADA ESTILO SOFI & MATEO (MARCO ARQUEADO LIMPIO) -->
             <header class="hero-cover-arch">
                 <div class="arch-frame">
                     <img src="img/portada.png" alt="Portada Liza y Guillermo" class="hero-img-arch">
                     <div class="arch-overlay-content">
-                        <h1 class="names-script-arch">Liza & Guillermo</h1>
+                        <h1 class="names-script-arch gold-text-shimmer">Liza & Guillermo</h1>
                         <div class="arch-sub-badge">Nuestra Boda</div>
                     </div>
                 </div>
             </header>
-
-            <!-- PASE VIP FIJO CON "VÁLIDO PARA 2 PERSONAS" -->
-            <div id="bloque-vip" class="vip-badge reveal textured-pastel-box">
-                <span><i class="fa-solid fa-champagne-glasses" style="color:var(--gold-sutil); margin-right:4px;"></i> Pase Exclusivo / Invitados</span>
-                <strong id="nombre-invitado-vip">Nuestros Invitados Especiales</strong>
-                <div style="margin-top: 8px; font-size: 0.85rem; font-family: 'Times New Roman', Times, serif; color: var(--text-dark); letter-spacing: 1px; font-weight: normal; border-top: 1px dashed var(--gold-light); padding-top: 6px;">
-                    <i class="fa-solid fa-ticket" style="color: var(--gold-sutil); margin-right: 5px;"></i> Válido para 2 personas
-                </div>
-            </div>
 
             <!-- 2. MENSAJE DE INVITACIÓN -->
             <section class="reveal section-gradient-pastel-1">
@@ -119,7 +121,7 @@
                 <p style="font-size: 0.72rem; letter-spacing: 2.5px; color: var(--gold-sutil); text-transform: uppercase; margin-top: 14px; font-weight: 600;">← DESLIZÁ →</p>
             </section>
 
-            <!-- 5. CRONOGRAMA ESTILO POLAROID (SIN CÍRCULO) -->
+            <!-- 5. CRONOGRAMA ESTILO POLAROID -->
             <section class="reveal section-beige-block">
                 <div class="polaroid-frame-container">
                     <img src="img/cronograma.png" alt="Cronograma Foto" class="polaroid-img">
@@ -287,7 +289,7 @@
                     <div class="form-icon-header"><i class="fa-solid fa-heart" style="color: #d97782;"></i></div>
                     <h2 class="title-editorial" style="font-size: 1.5rem;">Muro de Deseos</h2>
                     <p class="sub-editorial" style="font-size: 0.95rem; margin-top: 6px;">Dejá tu mensaje a los novios</p>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Tus palabras serán guardadas en nuestro libro de recuerdos inolvidables.</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Tus palabras serão guardadas en nuestro libro de recuerdos inolvidables.</p>
                     
                     <input type="text" id="input-nombre-deseo" class="editorial-input" placeholder="Nombre y Apellido *">
                     <textarea id="input-texto-deseo" class="editorial-textarea" placeholder="Escribí tus buenos deseos para Liza & Guillermo..."></textarea>
