@@ -120,65 +120,85 @@
                 <p style="font-size: 0.72rem; letter-spacing: 2.5px; color: var(--gold-sutil); text-transform: uppercase; margin-top: 14px; font-weight: 600;">← DESLIZÁ →</p>
             </section>
 
-            <!-- 5. CRONOGRAMA ESTILO POLAROID -->
-            <section class="reveal section-beige-block">
-                <div class="polaroid-frame-container">
-                    <img src="img/cronograma.png" alt="Cronograma Foto" class="polaroid-img">
-                </div>
-                
-                <h2 class="editorial-heading mt-5">CRONOGRAMA</h2>
-                <p class="title-sub-cursive" style="margin-bottom: 25px;">Momentos de la Boda</p>
-
-                <div class="details-container">
-                    <div class="detail-card-item">
-                        <div class="detail-icon-wrap"><i class="fa-solid fa-camera"></i></div>
-                        <span class="detail-card-title">18:30 HS</span>
-                        <h4 class="detail-card-desc" style="font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 2px; font-weight: 600; color: var(--olive-bg); margin-top: 4px;">RECEPCIÓN Y FOTOS</h4>
+            <!-- CRONOGRAMA ESTILO TARJETAS HORIZONTALES EN BLOQUE VERDE -->
+            <div class="bloque-verde" style="margin-top: 25px; border-radius: 20px;">
+                <section class="section-pad reveal text-center" style="max-width: 400px; padding: 25px 15px;">
+                    <div class="polaroid-frame-container" style="margin-bottom: 20px;">
+                        <img src="img/cronograma.png" alt="Cronograma Foto" class="polaroid-img" style="border-radius: 10px; width: 100%; max-width: 260px; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
                     </div>
+                    
+                    <h2 class="editorial-heading-light mt-5">CRONOGRAMA</h2>
+                    <p class="section-sub-label" style="color: #f0ecf4; margin-bottom: 25px;">Momentos de la Boda</p>
 
-                    <div class="detail-card-item mt-15">
-                        <div class="detail-icon-wrap"><i class="fa-solid fa-ring"></i></div>
-                        <span class="detail-card-title">18:45 HS</span>
-                        <h4 class="detail-card-desc" style="font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 2px; font-weight: 600; color: var(--olive-bg); margin-top: 4px;">CEREMONIA CIVIL</h4>
-                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        
+                        <div class="cronograma-card-row">
+                            <div class="cronograma-icon-circle"><i class="fa-solid fa-camera"></i></div>
+                            <div class="cronograma-text-box">
+                                <span class="cronograma-time-row">18:30 HS</span>
+                                <h4 class="cronograma-title-row">Recepción y fotos</h4>
+                            </div>
+                        </div>
 
-                    <div class="detail-card-item mt-15">
-                        <div class="detail-icon-wrap"><i class="fa-solid fa-heart"></i></div>
-                        <span class="detail-card-title">20:00 HS</span>
-                        <h4 class="detail-card-desc" style="font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 2px; font-weight: 600; color: var(--olive-bg); margin-top: 4px;">PRIMER BAILE DE LOS NUEVOS ESPOSOS</h4>
-                    </div>
+                        <div class="cronograma-card-row">
+                            <div class="cronograma-icon-circle"><i class="fa-solid fa-ring"></i></div>
+                            <div class="cronograma-text-box">
+                                <span class="cronograma-time-row">18:45 HS</span>
+                                <h4 class="cronograma-title-row">Ceremonia civil</h4>
+                            </div>
+                        </div>
 
-                    <div class="detail-card-item mt-15">
-                        <div class="detail-icon-wrap"><i class="fa-solid fa-utensils"></i></div>
-                        <span class="detail-card-title">21:30 HS</span>
-                        <h4 class="detail-card-desc" style="font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 2px; font-weight: 600; color: var(--olive-bg); margin-top: 4px;">CENA</h4>
-                    </div>
+                        <div class="cronograma-card-row">
+                            <div class="cronograma-icon-circle"><i class="fa-solid fa-heart"></i></div>
+                            <div class="cronograma-text-box">
+                                <span class="cronograma-time-row">20:00 HS</span>
+                                <h4 class="cronograma-title-row">Primer baile de los nuevos esposos</h4>
+                            </div>
+                        </div>
 
-                    <div class="detail-card-item mt-15">
-                        <div class="detail-icon-wrap"><i class="fa-solid fa-champagne-glasses"></i></div>
-                        <span class="detail-card-title">22:30 HS</span>
-                        <h4 class="detail-card-desc" style="font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 2px; font-weight: 600; color: var(--olive-bg); margin-top: 4px;">BRINDIS ESPECIAL</h4>
-                    </div>
+                        <div class="cronograma-card-row">
+                            <div class="cronograma-icon-circle"><i class="fa-solid fa-utensils"></i></div>
+                            <div class="cronograma-text-box">
+                                <span class="cronograma-time-row">21:30 HS</span>
+                                <h4 class="cronograma-title-row">Cena</h4>
+                            </div>
+                        </div>
 
-                    <div class="detail-card-item mt-15">
-                        <div class="detail-icon-wrap"><i class="fa-solid fa-star"></i></div>
-                        <span class="detail-card-title">23:00 HS</span>
-                        <h4 class="detail-card-desc" style="font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 2px; font-weight: 600; color: var(--olive-bg); margin-top: 4px;">PRIMER SHOW CON LOS INVITADOS</h4>
-                    </div>
+                        <div class="cronograma-card-row">
+                            <div class="cronograma-icon-circle"><i class="fa-solid fa-champagne-glasses"></i></div>
+                            <div class="cronograma-text-box">
+                                <span class="cronograma-time-row">22:30 HS</span>
+                                <h4 class="cronograma-title-row">Brindis especial</h4>
+                            </div>
+                        </div>
 
-                    <div class="detail-card-item mt-15">
-                        <div class="detail-icon-wrap"><i class="fa-solid fa-music"></i></div>
-                        <span class="detail-card-title">23:15 HS</span>
-                        <h4 class="detail-card-desc" style="font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 2px; font-weight: 600; color: var(--olive-bg); margin-top: 4px;">APERTURA DE LA PISTA DE BAILE</h4>
-                    </div>
+                        <div class="cronograma-card-row">
+                            <div class="cronograma-icon-circle"><i class="fa-solid fa-star"></i></div>
+                            <div class="cronograma-text-box">
+                                <span class="cronograma-time-row">23:00 HS</span>
+                                <h4 class="cronograma-title-row">Primer show con los invitados</h4>
+                            </div>
+                        </div>
 
-                    <div class="detail-card-item mt-15">
-                        <div class="detail-icon-wrap"><i class="fa-solid fa-moon"></i></div>
-                        <span class="detail-card-title">23:45 HS</span>
-                        <h4 class="detail-card-desc" style="font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 2px; font-weight: 600; color: var(--olive-bg); margin-top: 4px;">SEGUNDO SHOW HASTA QUE SALGA EL SOL</h4>
+                        <div class="cronograma-card-row">
+                            <div class="cronograma-icon-circle"><i class="fa-solid fa-music"></i></div>
+                            <div class="cronograma-text-box">
+                                <span class="cronograma-time-row">23:15 HS</span>
+                                <h4 class="cronograma-title-row">Apertura de la pista de baile</h4>
+                            </div>
+                        </div>
+
+                        <div class="cronograma-card-row">
+                            <div class="cronograma-icon-circle"><i class="fa-solid fa-moon"></i></div>
+                            <div class="cronograma-text-box">
+                                <span class="cronograma-time-row">23:45 HS</span>
+                                <h4 class="cronograma-title-row">Segundo show hasta que salga el sol</h4>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- 6. UBICACIÓN -->
             <section class="reveal section-gradient-pastel-1">
