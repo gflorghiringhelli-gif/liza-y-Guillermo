@@ -352,9 +352,18 @@ footer { padding: 30px 20px; font-size: 0.68rem; letter-spacing: 3px; color: var
 .reveal.active { opacity: 1; transform: translateY(0); }
 .mt-25 { margin-top: 25px; }
 
-/* ESTILOS LIMPIOS Y ELEGANTES PARA EL CRONOGRAMA */
+/* ESTILOS DEFINITIVOS PARA EL CRONOGRAMA */
+.cronograma-sub-fixed {
+  font-family: var(--font-garamond);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #f0ecf4 !important;
+  margin-top: 4px;
+  margin-bottom: 25px;
+}
+
 .cronograma-card-row {
-  background: #ffffff;
+  background: #ffffff !important;
   border: 1px solid #e2ded4;
   border-radius: 12px;
   padding: 14px 16px;
@@ -362,24 +371,24 @@ footer { padding: 30px 20px; font-size: 0.68rem; letter-spacing: 3px; color: var
   align-items: center;
   gap: 16px;
   text-align: left;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-.cronograma-icon-circle {
-  width: 46px;
-  height: 46px;
-  background: var(--olive-bg);
+.cronograma-icon-circle-fixed {
+  width: 48px;
+  height: 48px;
+  background-color: #797850 !important; /* Forzamos el verde oliva exacto */
   border-radius: 50%;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(121, 120, 80, 0.2);
+  box-shadow: 0 4px 10px rgba(121, 120, 80, 0.3);
 }
 
-.cronograma-icon-circle i {
-  font-size: 1.15rem;
-  color: #ffffff !important;
+.cronograma-icon-circle-fixed i {
+  font-size: 1.2rem;
+  color: #ffffff !important; /* Forzamos el ícono blanco */
 }
 
 .cronograma-text-box {
@@ -392,15 +401,15 @@ footer { padding: 30px 20px; font-size: 0.68rem; letter-spacing: 3px; color: var
   font-family: var(--font-sans);
   font-size: 0.72rem;
   letter-spacing: 2px;
-  color: var(--olive-bg);
-  font-weight: 500; /* Sin negrita pesada */
+  color: #797850 !important;
+  font-weight: 600;
 }
 
 .cronograma-title-row {
   font-family: var(--font-garamond);
   font-size: 1.2rem;
-  font-weight: 400; /* Letra normal sin negrita exagerada */
-  color: #2c2c2c;
+  font-weight: 400;
+  color: #2c2c2c !important;
   line-height: 1.3;
   margin-top: 2px;
 }
