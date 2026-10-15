@@ -61,35 +61,35 @@ body {
     position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); 
     z-index: 5001; width: 90%; max-width: 320px; 
     display: flex;
-/* ESTILOS PARA EL CRONOGRAMA HORIZONTAL EN BLOQUE VERDE */
+    
+/* ESTILOS CORREGIDOS PARA EL CRONOGRAMA (TARJETAS BLANCAS Y TEXTO VERDE) */
 .cronograma-card-row {
-  background: rgba(255, 255, 255, 0.13);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: #ffffff;
+  border: 1px solid #e2ded4;
   border-radius: 12px;
   padding: 14px 16px;
   display: flex;
   align-items: center;
   gap: 16px;
   text-align: left;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
 .cronograma-icon-circle {
   width: 46px;
   height: 46px;
-  background: #ffffff;
+  background: var(--olive-bg);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(121, 120, 80, 0.2);
 }
 
 .cronograma-icon-circle i {
   font-size: 1.15rem;
-  color: var(--olive-bg);
+  color: #ffffff;
 }
 
 .cronograma-text-box {
@@ -102,15 +102,15 @@ body {
   font-family: var(--font-sans);
   font-size: 0.72rem;
   letter-spacing: 2px;
-  color: #f0ecf4;
-  font-weight: 500;
+  color: var(--olive-bg);
+  font-weight: 600;
 }
 
 .cronograma-title-row {
   font-family: var(--font-garamond);
   font-size: 1.25rem;
-  font-weight: 500;
-  color: #ffffff;
+  font-weight: 600;
+  color: #2c2c2c;
   line-height: 1.3;
   margin-top: 2px;
 }
