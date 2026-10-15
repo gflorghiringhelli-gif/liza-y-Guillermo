@@ -352,16 +352,7 @@ footer { padding: 30px 20px; font-size: 0.68rem; letter-spacing: 3px; color: var
 .reveal.active { opacity: 1; transform: translateY(0); }
 .mt-25 { margin-top: 25px; }
 
-/* ESTILOS DEFINITIVOS PARA EL CRONOGRAMA */
-.cronograma-sub-fixed {
-  font-family: var(--font-garamond);
-  font-style: italic;
-  font-size: 1.15rem;
-  color: #f0ecf4 !important;
-  margin-top: 4px;
-  margin-bottom: 25px;
-}
-
+/* ESTILOS DEFINITIVOS PARA EL CRONOGRAMA (FONDO BLANCO, ÍCONOS MARRONES) */
 .cronograma-card-row {
   background: #ffffff !important;
   border: 1px solid #e2ded4;
@@ -377,18 +368,18 @@ footer { padding: 30px 20px; font-size: 0.68rem; letter-spacing: 3px; color: var
 .cronograma-icon-circle-fixed {
   width: 48px;
   height: 48px;
-  background-color: #797850 !important; /* Forzamos el verde oliva exacto */
+  background-color: #8a7a65 !important; /* Marrón terracota exacto para el círculo */
   border-radius: 50%;
   display: flex !important;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(121, 120, 80, 0.3);
+  box-shadow: 0 4px 10px rgba(138, 122, 101, 0.3);
 }
 
 .cronograma-icon-circle-fixed i {
   font-size: 1.2rem;
-  color: #ffffff !important; /* Forzamos el ícono blanco */
+  color: #ffffff !important; /* Ícono blanco brillante */
 }
 
 .cronograma-text-box {
@@ -401,7 +392,7 @@ footer { padding: 30px 20px; font-size: 0.68rem; letter-spacing: 3px; color: var
   font-family: var(--font-sans);
   font-size: 0.72rem;
   letter-spacing: 2px;
-  color: #797850 !important;
+  color: #8a7a65 !important; /* Hora en marrón terracota */
   font-weight: 600;
 }
 
@@ -409,7 +400,7 @@ footer { padding: 30px 20px; font-size: 0.68rem; letter-spacing: 3px; color: var
   font-family: var(--font-garamond);
   font-size: 1.2rem;
   font-weight: 400;
-  color: #2c2c2c !important;
+  color: #2c2c2c !important; /* Título del evento en oscuro */
   line-height: 1.3;
   margin-top: 2px;
 }
