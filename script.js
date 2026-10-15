@@ -6,15 +6,14 @@ function cargarVIP() {
     const params = new URLSearchParams(window.location.search);
     const para = params.get('para');
     if (para) {
-        const nameEl = document.getElementById('nombre-invitado-sobre');
-        if (nameEl) {
+        const badge = document.getElementById('bloque-vip');
+        const nameEl = document.getElementById('nombre-invitado-vip');
+        if (badge && nameEl) {
             nameEl.innerText = para.replace(/\+/g, ' ');
+            badge.classList.remove('oculto');
         }
     }
 }
-
-// Ejecutar al cargar la página para que tome el nombre en el sobre de inicio
-window.addEventListener('DOMContentLoaded', cargarVIP);
 
 function activarInvitacion() {
     if (yaAbrio) return;
@@ -51,6 +50,7 @@ function transitionToMain(intro) {
         const finalSec = document.getElementById('seccion-final');
         if (finalSec) finalSec.classList.remove('oculto');
         window.scrollTo(0, 0);
+        cargarVIP();
         iniciarScrollAnimations();
         setInterval(actualizarContador, 1000);
         actualizarContador();
