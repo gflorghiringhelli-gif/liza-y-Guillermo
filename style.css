@@ -62,7 +62,7 @@ body {
     z-index: 5001; width: 90%; max-width: 320px; 
     display: flex;
     
-/* ESTILOS CORREGIDOS PARA EL CRONOGRAMA (TARJETAS BLANCAS Y TEXTO VERDE) */
+/* ESTILOS LIMPIOS Y ELEGANTES PARA EL CRONOGRAMA */
 .cronograma-card-row {
   background: #ffffff;
   border: 1px solid #e2ded4;
@@ -89,7 +89,7 @@ body {
 
 .cronograma-icon-circle i {
   font-size: 1.15rem;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .cronograma-text-box {
@@ -103,13 +103,13 @@ body {
   font-size: 0.72rem;
   letter-spacing: 2px;
   color: var(--olive-bg);
-  font-weight: 600;
+  font-weight: 500; /* Sin negrita pesada */
 }
 
 .cronograma-title-row {
   font-family: var(--font-garamond);
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 400; /* Letra normal sin negrita exagerada */
   color: #2c2c2c;
   line-height: 1.3;
   margin-top: 2px;
