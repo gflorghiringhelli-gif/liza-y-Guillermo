@@ -61,3 +61,56 @@ body {
     position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); 
     z-index: 5001; width: 90%; max-width: 320px; 
     display: flex;
+/* ESTILOS PARA EL CRONOGRAMA HORIZONTAL EN BLOQUE VERDE */
+.cronograma-card-row {
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  backdrop-filter: blur(4px);
+}
+
+.cronograma-icon-circle {
+  width: 46px;
+  height: 46px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.cronograma-icon-circle i {
+  font-size: 1.15rem;
+  color: var(--olive-bg);
+}
+
+.cronograma-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cronograma-time-row {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  color: #f0ecf4;
+  font-weight: 500;
+}
+
+.cronograma-title-row {
+  font-family: var(--font-garamond);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-top: 2px;
+}
